@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Тавотница</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,22 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <!-- [ШАБЛОН] Подключение Метрики -->
-
-
-
-
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <div class="logo-box">
-                <a href="https://krepcom.ru" target="_blank">
-                    <!-- [ШАБЛОН] Путь к логотипу -->
-                    <img src="logo-new-krepcom_WATERMARK.png" alt="Крепком">
-                </a>
-            </div>
-            <!-- [ШАБЛОН] Опциональный бейдж (например, "Хит" или "Новинка") -->
-            <!-- <span class="badge">Хит продаж</span> -->
+            <a class="logo-box" href="https://krepcom.ru" target="_blank" rel="noopener">
+                <!-- [ШАБЛОН] Путь к логотипу -->
+                <img src="logo-new-krepcom_WATERMARK.png" alt="Крепком">
+            </a>
+            <!-- [ШАБЛОН] Опциональный бейдж: <span class="badge">Хит продаж</span> -->
         </header>
 
         <main class="product-card">
@@ -34,87 +27,76 @@
             <p class="product-subtitle">Быстрый способ смазать что угодно</p>
 
             <div class="product-grid">
-                <!-- ЛЕВАЯ КОЛОНКА: Медиа и сопутствующие товары -->
+                <!-- ЛЕВАЯ КОЛОНКА -->
                 <div class="left-column">
                     <section class="carousel-section">
-    <h2 class="carousel-title">Типы таботниц</h2>
-    <p class="carousel-subtitle">Листайте для просмотра всех вариантов</p>
+                        <h2 class="carousel-title">Типы тавотниц</h2>
+                        <p class="carousel-subtitle">Листайте для просмотра всех вариантов</p>
 
-    <div class="carousel">
-        <button class="carousel-btn carousel-btn-prev" aria-label="Назад">
-            <i class="fas fa-chevron-left"></i>
-        </button>
+                        <div class="carousel">
+                            <button class="carousel-btn carousel-btn-prev" aria-label="Назад" type="button">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
 
-        <div class="carousel-track">
+                            <div class="carousel-track" tabindex="0" aria-label="Типы тавотниц">
+                                <article class="carousel-card">
+                                    <div class="carousel-image">
+                                        <img src="прямая оц.jpg.webp" alt="Тавотница прямая" loading="lazy">
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h3>Прямая тавотница</h3>
+                                        <p>Для стандартных соединений под прямым углом. Размер M8–M20.</p>
+                                    </div>
+                                </article>
 
-            <!-- Карточка 1 -->
-            <article class="carousel-card">
-                <div class="carousel-image">
-                    <img src="прямая оц.jpg.webp" alt="Таботница прямая" loading="lazy">
-                </div>
-                <div class="carousel-caption">
-                    <h3>Прямая таботница</h3>
-                    <p>Для стандартных соединений под прямым углом. Размер M8–M20.</p>
-                </div>
-            </article>
+                                <article class="carousel-card">
+                                    <div class="carousel-image">
+                                        <img src="tabotnica-2.jpg" alt="Тавотница угловая" loading="lazy">
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h3>Угловая тавотница</h3>
+                                        <p>Для угловых соединений 90°. Усиленная конструкция.</p>
+                                    </div>
+                                </article>
 
-            <!-- Карточка 2 -->
-            <article class="carousel-card">
-                <div class="carousel-image">
-                    <img src="tabotnica-2.jpg" alt="Таботница угловая" loading="lazy">
-                </div>
-                <div class="carousel-caption">
-                    <h3>Угловая таботница</h3>
-                    <p>Для угловых соединений 90°. Усиленная конструкция.</p>
-                </div>
-            </article>
+                                <article class="carousel-card">
+                                    <div class="carousel-image">
+                                        <img src="tabotnica-3.jpg" alt="Тавотница Т-образная" loading="lazy">
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h3>Т-образная тавотница</h3>
+                                        <p>Для Т-образных соединений. Высокая прочность на срез.</p>
+                                    </div>
+                                </article>
 
-            <!-- Карточка 3 -->
-            <article class="carousel-card">
-                <div class="carousel-image">
-                    <img src="tabotnica-3.jpg" alt="Таботница T-образная" loading="lazy">
-                </div>
-                <div class="carousel-caption">
-                    <h3>T-образная таботница</h3>
-                    <p>Для Т-образных соединений. Высокая прочность на срез.</p>
-                </div>
-            </article>
+                                <article class="carousel-card">
+                                    <div class="carousel-image">
+                                        <img src="tabotnica-4.jpg" alt="Тавотница регулируемая" loading="lazy">
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h3>Регулируемая тавотница</h3>
+                                        <p>С возможностью регулировки угла. Универсальное применение.</p>
+                                    </div>
+                                </article>
 
-            <!-- Карточка 4 -->
-            <article class="carousel-card">
-                <div class="carousel-image">
-                    <img src="tabotnica-4.jpg" alt="Таботница регулируемая" loading="lazy">
-                </div>
-                <div class="carousel-caption">
-                    <h3>Регулируемая таботница</h3>
-                    <p>С возможностью регулировки угла. Универсальное применение.</p>
-                </div>
-            </article>
+                                <article class="carousel-card">
+                                    <div class="carousel-image">
+                                        <img src="tabotnica-5.jpg" alt="Тавотница скрытого монтажа" loading="lazy">
+                                    </div>
+                                    <div class="carousel-caption">
+                                        <h3>Скрытого монтажа</h3>
+                                        <p>Для невидимых соединений. Эстетичный внешний вид.</p>
+                                    </div>
+                                </article>
+                            </div>
 
-            <!-- Карточка 5 -->
-            <article class="carousel-card">
-                <div class="carousel-image">
-                    <img src="tabotnica-5.jpg" alt="Таботница скрытого монтажа" loading="lazy">
-                </div>
-                <div class="carousel-caption">
-                    <h3>Скрытого монтажа</h3>
-                    <p>Для невидимых соединений. Эстетичный внешний вид.</p>
-                </div>
-            </article>
+                            <button class="carousel-btn carousel-btn-next" aria-label="Вперёд" type="button">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
 
-        </div>
-
-        <button class="carousel-btn carousel-btn-next" aria-label="Вперёд">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-    </div>
-
-    <!-- Индикаторы -->
-    <div class="carousel-dots"></div>
-</section>
-                    </div>
-
-                    
+                        <div class="carousel-dots"></div>
+                    </section>
 
                     <!-- [ШАБЛОН] Сопутствующие товары -->
                     <section class="related-products">
@@ -125,12 +107,11 @@
                                 <img src="очки.webp" alt="Очки" loading="lazy">
                                 <h4>Очки</h4>
                             </a>
-                            
                             <a href="https://krepcom.ru/catalog/?q=перчатки" class="related-card">
                                 <img src="перчатки.jpg.webp" alt="Перчатки" loading="lazy">
                                 <h4>Перчатки</h4>
                             </a>
-                                <a href="https://krepcom.ru/catalog/izmeritelnyy-instrument/" class="related-card">
+                            <a href="https://krepcom.ru/catalog/izmeritelnyy-instrument/" class="related-card">
                                 <img src="шаблон.jpeg" alt="Шаблон" loading="lazy">
                                 <h4>Шаблон</h4>
                             </a>
@@ -138,7 +119,7 @@
                     </section>
                 </div>
 
-                <!-- ПРАВАЯ КОЛОНКА: Информация и характеристики -->
+                <!-- ПРАВАЯ КОЛОНКА -->
                 <div class="right-column">
                     <div class="info-card">
                         <h3>Принцип работы</h3>
@@ -146,14 +127,14 @@
                         <p>Слесарный безынерционный молоток облитый эластомером применяется для слесарно-монтажных и демонтажных работ, а также для работ с мягкими листовыми металлами.
                            Профессиональный безынерционный многофункциональный инструмент. Маслобензостойкий корпус с двухкомпонентной рукояткой. Голова засыпана свинцовой крошкой для гашения
                            инерции. Отсутствие отдачи. Рабочая часть кувалды имеет пустотелую цельнолитую оболочку из ударопрочного пластика, облитого эластомером. Оптимальная тяжесть при работе.
-                           Рукоятка имеет противоскользящее покрытие. Полная обливка корпуса молотка предотвращает царапины на поверхности и исключает искры. 
+                           Рукоятка имеет противоскользящее покрытие. Полная обливка корпуса молотка предотвращает царапины на поверхности и исключает искры.
                            Безынерционная конструкция минимизирует рикошет и отдачу, делая работу более комфортной и безопасной.</p>
                     </div>
 
                     <div class="info-card">
                         <h3>Назначение</h3>
                         <!-- [ШАБЛОН] Текст назначения -->
-                        <p>Применяется в промышленном производстве, при строительстве дорожных, лесных, сельскохозяйственных, садовых, 
+                        <p>Применяется в промышленном производстве, при строительстве дорожных, лесных, сельскохозяйственных, садовых,
                            слесарно-монтажных и демонтажных работах, а также работах с мягкими листовыми металлами.</p>
                     </div>
 
@@ -164,14 +145,13 @@
                         <div class="spec-item"><span>Покрытие</span><strong>Резина</strong></div>
                         <div class="spec-item"><span>Боек</span><strong>Круглый</strong></div>
                         <div class="spec-item"><span>Тип киянки</span><strong>Безынерционная</strong></div>
-                        
                     </div>
 
                     <h3 class="section-title">Размерный ряд</h3>
                     <div class="sizes">
                         <!-- [ШАБЛОН] Размеры -->
                         <span>от 450 до 1800 грамм</span>
-                       <span>и другие</span>
+                        <span>и другие</span>
                     </div>
 
                     <h3 class="section-title">Производители</h3>
@@ -183,11 +163,9 @@
                         <a href="https://krepcom.ru" class="manufacturer-card">Stayer</a>
                         <a href="https://krepcom.ru" class="manufacturer-card">Narex</a>
                         <a href="https://krepcom.ru" class="manufacturer-card">ЗУБР</a>
-                       
-                        
                     </div>
 
-                    <a class="site-link" href="https://krepcom.ru/catalog/?ss=%2Fcatalog%2F&q=безынерционн&s=" target="_blank">
+                    <a class="site-link" href="https://krepcom.ru/catalog/?ss=%2Fcatalog%2F&q=безынерционн&s=" target="_blank" rel="noopener">
                         Перейти в каталог
                     </a>
                 </div>
@@ -198,57 +176,70 @@
             <p>Отсканируйте QR-код на упаковке для перехода к описанию изделия.</p>
         </footer>
     </div>
-    <script>const track = document.querySelector('.carousel-track');
-const cards = document.querySelectorAll('.carousel-card');
-const prevBtn = document.querySelector('.carousel-btn-prev');
-const nextBtn = document.querySelector('.carousel-btn-next');
-const dotsContainer = document.querySelector('.carousel-dots');
 
-// Создаём точки
-cards.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
-    dot.setAttribute('aria-label', `Перейти к слайду ${i + 1}`);
-    dot.addEventListener('click', () => scrollToCard(i));
-    dotsContainer.appendChild(dot);
-});
+    <script> (function () {
+    const track = document.querySelector('.carousel-track');
+    if (!track) return;
 
-const dots = document.querySelectorAll('.carousel-dot');
+    const cards = Array.from(track.querySelectorAll('.carousel-card'));
+    const prevBtn = document.querySelector('.carousel-btn-prev');
+    const nextBtn = document.querySelector('.carousel-btn-next');
+    const dotsContainer = document.querySelector('.carousel-dots');
 
-function scrollToCard(index) {
-    const card = cards[index];
-    if (!card) return;
-    track.scrollTo({
-        left: card.offsetLeft - track.offsetLeft,
-        behavior: 'smooth'
+    // Точки-индикаторы
+    const dots = cards.map((_, i) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Перейти к слайду ' + (i + 1));
+        dot.addEventListener('click', () => scrollToCard(i));
+        dotsContainer.appendChild(dot);
+        return dot;
     });
-}
 
-// Кнопки
-prevBtn.addEventListener('click', () => {
-    const current = getCurrentIndex();
-    scrollToCard(Math.max(0, current - 1));
-});
+    function scrollToCard(index) {
+        const card = cards[Math.max(0, Math.min(cards.length - 1, index))];
+        track.scrollTo({ left: card.offsetLeft - track.offsetLeft, behavior: 'smooth' });
+    }
 
-nextBtn.addEventListener('click', () => {
-    const current = getCurrentIndex();
-    scrollToCard(Math.min(cards.length - 1, current + 1));
-});
+    // Текущий слайд: ближайший к левому краю; в конце ленты — последний
+    function getCurrentIndex() {
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        if (maxScroll > 0 && track.scrollLeft >= maxScroll - 2) return cards.length - 1;
+        let best = 0, bestDist = Infinity;
+        cards.forEach((card, i) => {
+            const dist = Math.abs(card.offsetLeft - track.offsetLeft - track.scrollLeft);
+            if (dist < bestDist) { bestDist = dist; best = i; }
+        });
+        return best;
+    }
 
-// Определение текущего индекса
-function getCurrentIndex() {
-    const scrollLeft = track.scrollLeft;
-    const cardWidth = cards[0].offsetWidth + 16; // + gap
-    return Math.round(scrollLeft / cardWidth);
-}
+    function update() {
+        const current = getCurrentIndex();
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+        const maxScroll = track.scrollWidth - track.clientWidth;
+        if (prevBtn) prevBtn.disabled = track.scrollLeft <= 2;
+        if (nextBtn) nextBtn.disabled = track.scrollLeft >= maxScroll - 2;
+    }
 
-// Обновление точек при прокрутке
-track.addEventListener('scroll', () => {
-    const current = getCurrentIndex();
-    dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === current);
+    if (prevBtn) prevBtn.addEventListener('click', () => scrollToCard(getCurrentIndex() - 1));
+    if (nextBtn) nextBtn.addEventListener('click', () => scrollToCard(getCurrentIndex() + 1));
+
+    // Стрелки с клавиатуры
+    track.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') { e.preventDefault(); scrollToCard(getCurrentIndex() + 1); }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); scrollToCard(getCurrentIndex() - 1); }
     });
-});
-    </script>
+
+    let ticking = false;
+    track.addEventListener('scroll', () => {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => { update(); ticking = false; });
+    }, { passive: true });
+
+    window.addEventListener('resize', update);
+    update();
+})();</script>
 </body>
 </html>
