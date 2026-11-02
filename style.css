@@ -103,7 +103,7 @@ body {
     width: 100%;
 }
 
-/* Carousel - ИСПРАВЛЕНО */
+/* === Карусель (ИСПРАВЛЕНО) === */
 .carousel-section {
     margin-bottom: 20px;
     width: 100%;
@@ -113,7 +113,6 @@ body {
     font-size: 17px;
     margin-bottom: 4px;
     text-align: center;
-    padding: 0 8px;
 }
 
 .carousel-subtitle {
@@ -121,25 +120,24 @@ body {
     text-align: center;
     margin-bottom: 14px;
     font-size: 12px;
-    padding: 0 8px;
 }
 
 .carousel {
     position: relative;
     width: 100%;
+    overflow: hidden; /* 🔑 КРИТИЧНО: обрезаем всё, что вылезает */
 }
 
 .carousel-track {
     display: flex;
-    gap: 10px;
+    gap: 0; /* 🔑 НОЛЬ на мобильных */
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    padding: 8px 8px 16px 8px; /* 🔑 Добавил padding слева и справа */
+    padding: 0; /* 🔑 НОЛЬ */
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
     width: 100%;
-    margin: 0; /* 🔑 Убрал margin */
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -147,15 +145,14 @@ body {
 }
 
 .carousel-card {
-    flex: 0 0 100%; /* 🔑 СТРОГО 100% ширины */
+    flex: 0 0 100%; /* 🔑 Строго 100% ширины трека */
     scroll-snap-align: center;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-md);
     overflow: hidden;
     box-shadow: var(--shadow);
-    width: 100%;
-    max-width: 100%; /* 🔑 Дополнительно */
+    /* УБРАТЬ width и max-width — они конфликтуют с flex */
 }
 
 .carousel-image {
@@ -171,7 +168,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 10px;
+    padding: 12px;
 }
 
 .carousel-caption {
@@ -182,7 +179,6 @@ body {
 .carousel-caption h3 {
     font-size: 15px;
     margin-bottom: 6px;
-    color: var(--text-main);
 }
 
 .carousel-caption p {
@@ -192,9 +188,7 @@ body {
     margin: 0;
 }
 
-.carousel-btn {
-    display: none;
-}
+.carousel-btn { display: none; }
 
 .carousel-dots {
     display: flex;
@@ -398,10 +392,16 @@ body {
         font-size: 24px;
     }
     
-    .carousel-card {
-        flex: 0 0 calc((100% - 10px) / 2);
+    @media (min-width: 600px) {
+    .carousel-track {
+        gap: 12px;
+        padding: 0 6px;
     }
     
+    .carousel-card {
+        flex: 0 0 calc((100% - 12px) / 2); /* 2 карточки с учётом gap */
+    }
+}
     .related-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -434,14 +434,18 @@ body {
         font-size: 30px; 
     }
     
-    .carousel-btn {
-        display: flex;
+    @media (min-width: 900px) {
+    .carousel-track {
+        gap: 16px;
+        padding: 0 8px;
     }
     
     .carousel-card {
-        flex: 0 0 calc((100% - 24px) / 3);
+        flex: 0 0 calc((100% - 32px) / 3); /* 3 карточки */
     }
     
+    .carousel-btn { display: flex; }
+}
     .related-grid {
         grid-template-columns: repeat(3, 1fr);
     }
